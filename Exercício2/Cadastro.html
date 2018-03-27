@@ -1,0 +1,90 @@
+
+<! DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Usuário</title>
+</head>
+<body>
+<h1>Dados de cadastro</h1>
+	<form method="get" action="validar.html">
+		
+		<label for="nome">Nome</label>
+		<input type="text" name="nome">
+		<br>
+
+		Data de Nascimento
+		<input type="date" name="nascimento"><br>
+
+		<label for="rua">Endereço</label>
+		<input type="text" name="rua">
+		<br>
+
+		<label for="telefone">Telefone</label>
+		<input type="text" name="telefone">
+
+		<label for="whatsapp">  Dispoível para contato Whastapp?</label>
+			<input type="radio" name="whatsapp" id="comWpp">
+			<label for="comWPP">Sim</label>
+
+			<input type="radio" name="whatsapp" id="semWpp">
+			<label for="semWPP">Não</label>
+
+		<br>
+
+		<label for="CPF">CPF</label>
+		<input type="text" name="CPF" maxlength="14" placeholder="XXX.XXX.XXX-XX">
+		<br>
+
+		<label for="genero">Gênero</label><br>
+			<input type="radio" name="genero" id="feminino" value="F">
+			<label for="feminino">Feminino</label><br>
+			
+			<input type="radio" name="genero" id="masculino" value="M">
+			<label for="masculino">Masculino</label><br>
+			
+			<input type="radio" name="genero" id="naobinario" value="NB">
+			<label for="naobinario">Não binário</label><br>
+		<br>
+
+
+		<label for="">Área de interesse</label><br>
+			<input type="checkbox" name="area" id="futebol">
+			<label for="futebol">Futebol</label><br>
+
+			<input type="checkbox" name="area" id="basquete">
+			<label for="basquete">Basquete</label><br>
+
+			<input type="checkbox" name="area" id="handball">Redes
+			<label for="handball">Handball</label><br>
+
+			<input type="checkbox" name="area" id="maratona">Otimização
+			<label for="maratona">Maratona</label><br>
+		<br>
+
+		<label for="cidade">Cidades</label>
+			<select name="cidade">
+				<option value="0">Selecione:</option>
+				<option value="1">João Monlevade</option>
+				<option value="2">Itabira</option>
+				<option value="3">Santa Bárbara</option>
+				<option value="4">Alvinópolis</option>
+				<option value="5">Itaúna</option>
+				<option value="6">Belo Horizonte</option>
+			</select>
+		<br><br>
+
+		<label for="usuario">Usuário</label>
+		<input type="text" name="usuario"><br>
+
+		<label for="senha">Senha</label>
+		<input type="password" name="senha"><br><br>
+
+		<input type="submit" value="Cadastrar"><br>
+		<input type="reset" value="Limpar todos dados">
+
+		<h3>Retornar para página inicial</h3>
+		<a href="PaginaInicial.html">Clique aqui</a>
+
+	</form>
+</body>
+</html>

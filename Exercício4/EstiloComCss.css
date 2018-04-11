@@ -1,0 +1,19 @@
+h1{
+	text-align: center;
+}
+
+h2{
+	font-size: 14pt;
+	background-color: blue;
+	font-family: tahoma;
+	font-weight: bold;
+	color: #c6c6c6;
+}
+
+h3{
+	font-size: 12pt;
+	border-color: #c6c6c6;
+	border-style: solid;
+	border-radius: 15px;
+	border-spacing: 20px;
+}

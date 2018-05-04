@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--documento.dados. hierarquia do atributo para referenciar-->
+	<meta charset="utf-8">
+	<title>Cálculo de IMC</title>
+
+	<link rel="stylesheet" href="./css/bootstrap.css">
+
+	<script src="./jquery-3.3.1.js"></script>
+
+	<script src="validacao.js"></script>
+
+</head>
+<body style="background-color: #008080">
+	<h1 class="jumbotron text-center">Cálculo de IMC</h1>
+	<form name="dados">
+		<br>
+		
+		<div class="form-group" id="grupoV1">
+			
+		<label style="color: #000000" for="valor1"><h3>Informe o peso (em quilos):</h3></label>
+		<input type="text" name="valor1" class="form-control">
+
+		<div class="alert alert-danger" style="display: none" id="alertaV1">
+			<p>Informe o peso corretamente.</p>
+		</div>
+		</div>
+		
+		
+		<div class="form-group" id="grupoV2">
+			<label style="color: #000000" for="valor2"><h3> Informe a altura (em metros):</h3></label>
+			<input type="text" name="valor2" class="form-control">
+
+			<div class="alert alert-danger" style="display: none" id="alertaV2">
+				<p>Informe a altura corretamente.</p>
+			</div>
+		</div>
+
+		<div class="form-group" id="grupoRes">
+			<label style="color: #000000" for="res"><h3>Resultado</h3> </label>
+			<input type="text" name="res" disabled="true" class="form-control">
+		</div>
+
+		<div class="form-group" id="grupoMsg">
+			<label style="color: #000000" for="cla"><h3>Classificação</h3> </label>
+			<input type="text" name="cla" disabled="true" class="form-control">
+		</div>
+
+		<div class="form-group" id="grupoIdeal">
+			<label style="color: #000000" for="ideal"><h3>Peso Ideal</h3></label>
+			<input type="text" name="ideal" disabled="true" class="form-control">
+		</div>
+
+		<br>
+		<br>
+
+		<button type="button" name="calculo" class="btn btn-primary"">Calcular</button>
+
+		<button type="reset" class="btn btn-warning">Limpar</button>
+	</form>
+</body>
+</html>
